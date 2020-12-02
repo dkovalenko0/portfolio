@@ -71,6 +71,10 @@ figure {
   font-weight: 400;
 }
 
+.nav__link--black {
+  color: $black;
+}
+
 .main {
   position: relative;
   overflow: hidden;
@@ -102,6 +106,28 @@ figure {
   bottom: -400px;
   left: -50px;
   z-index: -1;
+}
+
+.secondImage {
+  transition: all 0.8s ease 0s;
+}
+
+.secondImage._active {
+  transform: rotate(10deg);
+
+}
+
+.work__action {
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.work__action._active {
+  opacity: 1;
+}
+
+.container .work__content._active ~ .header__work .header .nav ul li a {
+  color: $black;
 }
 
 @import "media";
